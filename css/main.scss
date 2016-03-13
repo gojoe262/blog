@@ -4,21 +4,18 @@
 // Our variables
 $base-font-family: Verdana, Arial, open-sans, sans-serif;
 $base-font-size:   16px;
-$base-line-height: 24px;
+$base-line-height: 28px;
 
 $spacing-unit:     30px;
 
-$text-color:       #262626;
-$background-color: #e4e6f5;
+$text-color:       #616161;
+$background-color: #aaa;//#e4e6f5;
+$item-color: #fff;
 $brand-color:      #3ba791;
 
 // Width of the content area
 $container-width:     750px;
-$container-breakpoint: 800px;
-
-$skinny-index-list-witdh:    500px;
-$skinny-index-list-witdh-breakpoint:    550px;
-
+$container-breakpoint: 850px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "syntax-highlighting";

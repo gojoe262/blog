@@ -14,10 +14,25 @@ body {
     width: $container-width;
     margin: auto;
 }
-
 @media (max-width: $container-breakpoint) {
     .container { width: 95%;  }
 }
+
+.item {
+    box-shadow: 2px 2px 7px #737373;
+    background-color: $item-color;
+    padding: ($spacing-unit * .25) ($spacing-unit * 2);
+    margin-top: ($spacing-unit);
+    margin-bottom: ($spacing-unit);
+    border-radius: 10px;
+}
+@media (max-width: $container-breakpoint) {
+    .item {
+        padding: ($spacing-unit * .25) (10%);
+    }
+}
+
+
 
 a {
     text-decoration: none;
@@ -33,28 +48,34 @@ a:hover{
 // }
 
 h1 {
-    font-size: 40px;
-    line-height: 60px;
-    color: #000000;
+    font-size: ($base-font-size * 2.5);
+    line-height: ($base-line-height *  1.5);
+    margin-top: ($spacing-unit * 1.25);
+    // color: #000000;
+    color: darken($text-color, 15%);
     font-weight: normal;
 }
 
 h2 {
-    font-size: 30px;
-    line-height: 50px;
-    color: #000000;
+    font-size: ($base-font-size * 1.75);
+    margin-top: ($spacing-unit * 1.75);
+    line-height: ($base-line-height * 1.25);
+    // color: #000000;
+    color: darken($text-color, 15%);
     font-weight: normal;
 }
 
 h3 {
-    font-size: 20px;
-    line-height: 40px;
-    color: #000000;
+    font-size: ($base-font-size * 1.5);
+    line-height: ($base-line-height * 1.5);
+    margin-top: ($spacing-unit);
+    color: darken($text-color, 15%);
     font-weight: normal;
 }
 
 p {
-    margin-bottom: 30px;
+    margin-top: $spacing-unit * .75;
+    margin-bottom: $spacing-unit * .75;
 }
 
 .collapsed {
@@ -68,14 +89,14 @@ p {
 /***** IMAGES *****/
 img {
     display: block;
-    margin: 30px auto;
+    margin: $spacing-unit auto;
     border: 2px solid black;
     width: 650px;
 }
 
 /***** HIGHLIGHT *****/
 .highlight {
-    margin-bottom: 30px;
+    margin-bottom: $spacing-unit;
     margin-left: auto;
     margin-right: auto;
     width: 90%;

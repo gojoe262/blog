@@ -1,14 +1,14 @@
 /***** POST *****/
 .post-title {
     text-align: center;
-    padding-top: 30px;
 }
 
 .post-data{
-    color: #808080;
+    color: lighten($text-color, 20%);
+    margin-top:$spacing-unit * 2;
     text-align:center;
 }
 
 .post-content {
-    padding-top: 50px;
+    margin-top: $spacing-unit * 1.5;
 }
