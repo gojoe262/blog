@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+.post-image {
+    height: auto;
+    max-width: 100%;
+}
+
 .post-data{
     color: lighten($text-color, 20%);
     margin-top:$spacing-unit * 2;

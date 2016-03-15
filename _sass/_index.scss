@@ -3,6 +3,12 @@
     margin: auto;
 }
 
-@media (max-width: $container-breakpoint) {
-    .container { width: 90%;  }
+.index-post-title {
+    margin-left: 20%;
+}
+
+.index-post-data{
+    color: lighten($text-color, 20%);
+    margin-bottom: ($spacing-unit);
+    margin-left: 20%;
 }

@@ -32,8 +32,6 @@ body {
     }
 }
 
-
-
 a {
     text-decoration: none;
     color: $brand-color;
@@ -43,9 +41,9 @@ a:hover{
     color: lighten($brand-color, 15%);
 }
 
-// a:visited {
-//     color: darken($brand-color, 15%);
-// }
+a:visited {
+    color: darken($brand-color, 15%);
+}
 
 h1 {
     font-size: ($base-font-size * 2.5);
@@ -91,7 +89,8 @@ img {
     display: block;
     margin: $spacing-unit auto;
     border: 2px solid black;
-    width: 650px;
+    height: auto;
+    max-width: 100%;
 }
 
 /***** HIGHLIGHT *****/

@@ -2,7 +2,8 @@
 layout: post
 title:  "Lightweight Distros"
 date:   2016-03-04
-categories: computer linux programming distros
+tags: computer linux programming distros
+image: bunsen-desktop.png
 author: Joe Schueller
 excerpt: BunsenLabs is a minimalist Debian based operating system. It is a continuation of the former project CrunchBang Linux. In fact, many of the same developers that worked on CrunchBang are currently working on BunsenLabs.
 ---
