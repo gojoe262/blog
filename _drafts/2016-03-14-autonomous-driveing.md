@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Another Post #2"
-date:   2016-03-03
-tags: Testing tag
+title:  "Lane Detection and Autonomous Driving"
+date:   2016-03-14
+tags: tech cars autonomous driving
 author: Joe Schueller
 ---
 Testing subtitle
