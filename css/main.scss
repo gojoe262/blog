@@ -9,7 +9,7 @@ $base-line-height: 28px;
 $spacing-unit:     28px;
 
 $text-color:       #616161;
-$background-color: #aaa;//#e4e6f5;
+$background-color: #aaa;
 $item-color: #fff;
 $brand-color:      #3ba791;
 
@@ -21,7 +21,7 @@ $container-breakpoint: 850px;
 @import "syntax-highlighting";
 @import "reset";
 @import "common";
-@import "navigation";
+@import "header";
 @import "footer";
 @import "post";
 @import "index";

@@ -3,6 +3,9 @@ layout: default
 ---
 <div class="index-list">
     <div class="item">
+        <div class="center">
+            <h1>Index</h1>
+        </div>
     {% for post in site.posts %}
         <div class="index-post-title">
             <h3 class=""><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -14,7 +17,7 @@ layout: default
             {% endif %}
         </div>
         {% if forloop.length > 1 and forloop.last != true  %}
-        <hr width="60%">
+        <hr width="80%">
         {% endif %}
     {% endfor %}
     </div>
