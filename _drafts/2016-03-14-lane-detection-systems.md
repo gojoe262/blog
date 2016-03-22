@@ -2,7 +2,7 @@
 layout: post
 title:  "Lane Detection Systems"
 date:   2016-03-14
-tags: tech, car, cars, autonomous, driving, lane, detection
+tags: tech, car, cars, autonomous, driving, lane, detection,
 author: Joe Schueller
 ---
 Detecting lane markings is a trivial task for a human being, this is a complex task for a computer. A human is able to instantly spot patterns and recognize the importance of those patterns. A camera on the other hand interprets the road as a set of pixels. Converting the pixels to actual patterns includes filtering out visual noise, finding lane markings, determining road boundaries, fitting these patterns to models, and tracking the changes between frames. Lane detection systems must perform quickly, and they have to work on various road conditions, which can range from structured highways to unstructured gravel roads. Autonomous driving is a growing field, and the demand for safety and efficiency drives research (no pun intended) in the lane detection field.
