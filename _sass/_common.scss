@@ -1,5 +1,5 @@
 /***** FONTS *****/
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+// @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 /***** COMMON *****/
 body {
@@ -14,20 +14,57 @@ body {
     width: $container-width;
     margin: auto;
 }
-@media (max-width: $container-breakpoint) {
-    .container { width: 95%;  }
+@media (max-width: $container-width) {
+    .container { width: 100%;  }
 }
 
 .item {
-    // box-shadow: 2px 2px 7px #737373;
     background-color: $item-color;
     padding: ($spacing-unit * .25) ($spacing-unit * 2);
     margin-bottom: ($spacing-unit);
 }
-@media (max-width: $container-breakpoint) {
+@media (max-width: $container-width) {
     .item {
-        padding: ($spacing-unit * .25) (10%);
+        padding: ($spacing-unit * .25) (5%);
     }
+}
+
+h1 {
+    font-size: ($base-font-size * 2.5);
+    line-height: ($base-line-height *  1.5);
+    margin-top: ($spacing-unit * 1.25);
+    color: darken($text-color, 15%);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: ($base-font-size * 1.75);
+    margin-top: ($spacing-unit * 1.75);
+    line-height: ($base-line-height * 1.25);
+    color: darken($text-color, 15%);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: ($base-font-size * 1.5);
+    line-height: ($base-line-height * 1.5);
+    margin-top: ($spacing-unit);
+    color: darken($text-color, 15%);
+    font-weight: 700;
+}
+
+h4 {
+    font-size: ($base-font-size);
+    line-height: ($base-line-height);
+    margin-top: ($spacing-unit);
+    color: darken($text-color, 15%);
+    font-style: italic;
+    font-weight: 700;
+}
+
+p {
+    margin-top: $spacing-unit * .75;
+    margin-bottom: $spacing-unit * .75;
 }
 
 a {
@@ -41,42 +78,6 @@ a:hover{
 
 a:visited {
     color: darken($brand-color, 15%);
-}
-
-h1 {
-    font-size: ($base-font-size * 2.5);
-    line-height: ($base-line-height *  1.5);
-    margin-top: ($spacing-unit * 1.25);
-    // color: #000000;
-    color: darken($text-color, 15%);
-}
-
-h2 {
-    font-size: ($base-font-size * 1.75);
-    margin-top: ($spacing-unit * 1.75);
-    line-height: ($base-line-height * 1.25);
-    // color: #000000;
-    color: darken($text-color, 15%);
-}
-
-h3 {
-    font-size: ($base-font-size * 1.5);
-    line-height: ($base-line-height * 1.5);
-    margin-top: ($spacing-unit);
-    color: darken($text-color, 15%);
-}
-
-h4 {
-    font-size: ($base-font-size);
-    line-height: ($base-line-height);
-    margin-top: ($spacing-unit);
-    color: darken($text-color, 15%);
-    font-style: italic;
-}
-
-p {
-    margin-top: $spacing-unit * .75;
-    margin-bottom: $spacing-unit * .75;
 }
 
 .collapsed {
