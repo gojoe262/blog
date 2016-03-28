@@ -5,6 +5,13 @@ layout: default
     <h1>{{ page.title }}</h1>
 </div>
 
+<div class="post-data">
+    <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+    {% if page.author %} •
+        <span>{{ page.author }}</span>
+    {% endif %}
+</div>
+
 {% if page.image %}
 <div class="post-image">
     <img src=" {{ site.baseurl }}/img/{{ page.image }}" alt="" />
@@ -15,37 +22,33 @@ layout: default
     {{ content }}
 </div>
 
-<div class="post-data">
-    <p>
-        <span>{{ page.date | date: "%Y-%m-%d" }}</span>
-        {% if page.author %} •
-            <span>{{ page.author }}</span>
-        {% endif %}
-    </p>
-</div>
-
 <div class="post-related">
-    <h3>Related</h3>
-    <div class="list">
+{% assign anyRelatedFound = false %}
 {% for _post in site.posts %}
-    {% assign relatedFound = false %}
+    {% assign relatedFoundPerTag = false %}
     {% for _tag in _post.tags %}
-        {% if relatedFound == false %}
+        {% if relatedFoundPerTag == false %}
             {% if page.tags contains _tag and page.url != _post.url %}
-                <span title="Related: {{ _tag | remove: ","}}">
-                    <a href="{{ _post.url | prepend: site.baseurl }}">
-                        {{ _post.title }}
-                    </a>
-                    •
-                    {{ _post.date | date: "%Y-%m-%d" }}
-                    {% if _post.author %} •
-                        {{ _post.author }}
-                    {% endif %}
-                </span>
-            {% assign relatedFound = true %}
+                {% if anyRelatedFound == false %} <!-- first related post, if any exists-->
+                    <hr>
+                    <h3>Related</h3>
+                {% endif %}
+                <div class="indent">
+                    <span title="Related: {{ _tag | remove: ","}}">
+                        <a href="{{ _post.url | prepend: site.baseurl }}">
+                            {{ _post.title }}
+                        </a>
+                        •
+                        {{ _post.date | date: "%Y-%m-%d" }}
+                        {% if _post.author %} •
+                            {{ _post.author }}
+                        {% endif %}
+                    </span>
+                </div>
+                {% assign relatedFoundPerTag = true %}
+                {% assign anyRelatedFound = true %}
             {% endif %}
         {% endif %}
     {% endfor %}
 {% endfor %}
-    </div>
 </div>

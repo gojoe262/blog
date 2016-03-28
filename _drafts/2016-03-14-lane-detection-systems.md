@@ -2,7 +2,7 @@
 layout: post
 title:  "Lane Detection Systems"
 date:   2016-03-14
-tags: tech, car, cars, autonomous, driving, lane, detection,
+tags: tech, car, cars, autonomous, driving, lane detection,
 author: Joe Schueller
 ---
 Detecting lane markings is a trivial task for a human being, this is a complex task for a computer. A human is able to instantly spot patterns and recognize the importance of those patterns. A camera on the other hand interprets the road as a set of pixels. Converting the pixels to actual patterns includes filtering out visual noise, finding lane markings, determining road boundaries, fitting these patterns to models, and tracking the changes between frames. Lane detection systems must perform quickly, and they have to work on various road conditions, which can range from structured highways to unstructured gravel roads. Autonomous driving is a growing field, and the demand for safety and efficiency drives research (no pun intended) in the lane detection field.
@@ -14,31 +14,26 @@ Lane Departure Warning Systems are becoming more common. They can be found in ma
 
 
 # Active vs Passive Systems #
-
 There are two branches in modern lane detection systems: active and passive. Active systems use sensors, such as lasers and sonar, to gather and map the data of the surrounding area. These types of sensors are accurate and fast. They are able to process a lot of data in a short amount of time. The major drawbacks to active systems is that they are prone to interference. Weather and even other cars with similar sensors can interfere with an active systems. Also, equipment for active systems are more expensive than equipment for passive systems. For these reasons, research in passive systems has been a growing topic. Passive systems do not introduce any interference to the surrounding area and only use visual data as input. Most passive systems rely on dash-mounted cameras to retrieve data. Passive systems have the benefit of being reasonably priced and readily available. Also, video frames contain a wealth of information that can be useful in lane detection systems. In this paper, we will focus on passive systems.
 
 
 # Detection #
-
 Almost all lane detection systems that operate passively share four common steps: Preprocess, Feature Detection, Fitting, and Tracking. [5] Please remember that the only input data for a passive system is the video feed from the onboard camera(s). The four steps are essential when designing lane detection system that can perform well in real life situations.
 
 
-Problems
+##Problems##
+There are many problems faced when designing lane detection systems. First is the need for perfect performance in every situation. If a car is to be completely autonomous, lane detection must perform reliably for the safety of the passengers. Mistakes in the system can have disastrous results.
 
-There are many problems faced when designing lane detection systems. The first is the need for perfect performance in every situation. If a car is to be completely autonomous, lane detection must perform reliably for the safety of the passengers. Mistakes in the system can have disastrous results.
-
-The second problem is the wide variety of road conditions. Lane detections systems perform well on structured roads, that is, roads with clear lane markings and boundaries. However, lane detection systems must also perform well on unstructured road, such as the back country road with no lane markings.
+Second is the wide variety of road conditions. Lane detections systems perform well on structured roads, that is, roads with clear lane markings and boundaries. However, lane detection systems must also perform well on unstructured road, such as the back country road with no lane markings.
 
 The third problem is the complexity of detecting the road and lanes. There is a high processing cost in applying lane detection systems to each frame of a video feed. Computer systems are limited in computational power. In addition to dealing with complex algorithms, all of these must be carried out in real-time. A car will travel about 74 feet in one second when traveling at 50 miles per hour. Computational speed and efficiency are important topics to bear in mind when considering lane detection systems. This reaction time constraint has pushed researchers to improve computational speed and efficiency.
 
 
-Preprocess
-
+#Preprocess#
 Preprocessing has two main goals: remove visual noise and prepare the image for the next steps. Noise could include shadows, road discoloration, or other random noise in the image. The image can be shrunk down to only the essential parts in an effort to increase computational efficiency.  
 
 
-Binarization
-
+##Binarization##
 One way to reduce noise is to use a binarization function to convert the image to a two-toned image. A binarization function will go through each pixel and determine if it should be redrawn as white or black. For example, a grayscale image will contain pixels ranging in intensity from 0 (black) up to 255 (white). The binarization function would have a threshold, say 100. Any pixel at or below 100 would be redrawn as black. Pixels above 100 would be white. Using this technique, the image would be redrawn in two colors. [5] [7] Important features of the image, such as bright lane markings on the road, will stand out and be picked up easier in the Feature Detection step and the other following steps.
 
 
@@ -163,7 +158,7 @@ References
 
 [5] Yenikaya, S. Yenikaya G, & Düven E. Berndt, T. J. (2013). Keeping the Vehicle on the Road - A Survey on On-Road Detection Systems. ACM Computing Surveys 46, 1, Article 2, 1 - 43. http://dx.doi.org/10.1145/2522968.2522970  
 
-[6] Yu, B. & Jain, A. K. (1997) Lane Boundary Detection Using A Multiresolution Hough Transform. International Conference on Image Processing, Proceedings., Volume 2. 748 - 751. doi:10.1109/ICIP.1997.638604      	
+[6] Yu, B. & Jain, A. K. (1997) Lane Boundary Detection Using A Multiresolution Hough Transform. International Conference on Image Processing, Proceedings., Volume 2. 748 - 751. doi:10.1109/ICIP.1997.638604
 
 [7] (2009 March 23) Canny Edge Detection. Pages 1 - 7.0020http://www.cse.iitd.ernet.in/~pkalra/csl783/canny.pdf
 
