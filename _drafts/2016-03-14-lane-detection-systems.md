@@ -5,7 +5,14 @@ date:   2016-03-14
 tags: tech, car, cars, autonomous, driving, lane detection,
 author: Joe Schueller
 ---
-Detecting lane markings is a trivial task for a human being, this is a complex task for a computer. A human is able to instantly spot patterns and recognize the importance of those patterns. A camera on the other hand interprets the road as a set of pixels. Converting the pixels to actual patterns includes filtering out visual noise, finding lane markings, determining road boundaries, fitting these patterns to models, and tracking the changes between frames. Lane detection systems must perform quickly, and they have to work on various road conditions, which can range from structured highways to unstructured gravel roads. Autonomous driving is a growing field, and the demand for safety and efficiency drives research (no pun intended) in the lane detection field.
+Detecting lane markings is a simple task for a human being, but for a computer this is a complex task. A human can instantly spot patterns while a computer has interpret the road as a set of pixels. There are 4 steps a system runs through when detecting lanes: Preprocess, Feature Detection, Fitting, and Tracking.
+
+
+
+
+
+
+
 
 # Introduction #
 Lane Detection Systems were originally developed as Lane Departure Warning Systems. These warning systems would warn the driver audibly, visually, or physically if they were veering out of the lane. These systems are used in semi-trucks in Europe and North America. If the truck veered out of the lane without using a turn signal, the interior speakers of the truck would simulate the sound of a rumble strip.
@@ -17,8 +24,7 @@ Lane Departure Warning Systems are becoming more common. They can be found in ma
 There are two branches in modern lane detection systems: active and passive. Active systems use sensors, such as lasers and sonar, to gather and map the data of the surrounding area. These types of sensors are accurate and fast. They are able to process a lot of data in a short amount of time. The major drawbacks to active systems is that they are prone to interference. Weather and even other cars with similar sensors can interfere with an active systems. Also, equipment for active systems are more expensive than equipment for passive systems. For these reasons, research in passive systems has been a growing topic. Passive systems do not introduce any interference to the surrounding area and only use visual data as input. Most passive systems rely on dash-mounted cameras to retrieve data. Passive systems have the benefit of being reasonably priced and readily available. Also, video frames contain a wealth of information that can be useful in lane detection systems. In this paper, we will focus on passive systems.
 
 
-# Detection #
-Almost all lane detection systems that operate passively share four common steps: Preprocess, Feature Detection, Fitting, and Tracking. [5] Please remember that the only input data for a passive system is the video feed from the onboard camera(s). The four steps are essential when designing lane detection system that can perform well in real life situations.
+# Detec  [5] Please remember that the only input data for a passive system is the video feed from the onboard camera(s). The four steps are essential when designing lane detection system that can perform well in real life situations.
 
 
 ##Problems##
