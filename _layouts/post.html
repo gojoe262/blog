@@ -38,11 +38,13 @@ layout: default
                         <a href="{{ _post.url | prepend: site.baseurl }}">
                             {{ _post.title }}
                         </a>
-                        •
-                        {{ _post.date | date: "%Y-%m-%d" }}
-                        {% if _post.author %} •
-                            {{ _post.author }}
-                        {% endif %}
+                        <span class="post-related-data">
+                            •
+                            {{ _post.date | date: "%Y-%m-%d" }}
+                            {% if _post.author %} •
+                                {{ _post.author }}
+                            {% endif %}
+                        </span>
                     </span>
                 </div>
                 {% assign relatedFoundPerTag = true %}

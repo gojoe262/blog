@@ -9,10 +9,41 @@ Detecting lane markings is a simple task for a human being, but for a computer t
 
 
 
+## 1. Preprocess ##
+Preprocessing has two main goals: remove visual noise and prepare the image for the next steps. Noise could include shadows, road discoloration, or other random noise in the image. The image can be shrunk down to only the essential parts in an effort to increase computational efficiency.  
+
+#### Binarization ####
+One way to reduce noise is to use a binarization function to convert the image to a two-toned image. A binarization function will go through each pixel and determine if it should be redrawn as white or black. For example, a grayscale image will contain pixels ranging in intensity from 0 (black) up to 255 (white). The binarization function would have a threshold, say 100. Any pixel at or below 100 would be redrawn as black. Pixels above 100 would be white. Using this technique, the image would be redrawn in two colors. [5] [7] Important features of the image, such as bright lane markings on the road, will stand out and be picked up easier in the Feature Detection step and the other following steps.
+
+{% include image.html
+            img="blog/img/binarization-color.jpg"
+            caption="Full color" %}
+
+{% include image.html
+            img="blog/img/binarization-bw.jpg"
+            caption="Binary Image - Black and White" %}
 
 
 
+#### Blurring ####
 
+Other ways of reducing image noise it to apply a blur to the image, usually done with a Gaussian Blur. Commonly used in image processing and graphic design, it is very effective in removing random “salt and pepper noise” from the image. [5]
+
+#### Regions of Interest ####
+
+To increase efficiency, the image may be cut in size to only a portion of the original image. This portion is called a Region of Interest (ROI). A ROI is focused on the road, and cuts out the upper part of the image which usually contains only sky. By cutting down the image size, subsequent steps have less image to process, and therefore cut down on the computational complexity in the future steps. ROIs may be shaped in a trapezoid to fit around the view of the road or multiple ROIs may be shaped around the probable edges and lane markings of a road. [5]
+
+
+
+Figure 3: Region of Interest - Trapezoid
+
+
+
+ Figure 4: Region of Interest - Edges and Lane Markings
+
+
+Inverse Perspective Mapping
+To simplify other steps, Inverse Perspective Mapping (IPM) can be used. IPM maps pixels from a three dimensional view of the road to a two dimensional top-down view of the road. This top-down view is very useful in creating and fitting road models to incoming images. [1] [2]
 
 # Introduction #
 Lane Detection Systems were originally developed as Lane Departure Warning Systems. These warning systems would warn the driver audibly, visually, or physically if they were veering out of the lane. These systems are used in semi-trucks in Europe and North America. If the truck veered out of the lane without using a turn signal, the interior speakers of the truck would simulate the sound of a rumble strip.

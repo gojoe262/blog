@@ -91,10 +91,20 @@ a:visited {
 /***** IMAGES *****/
 img {
     display: block;
-    margin: $spacing-unit auto;
+    margin: 0 auto;
     border: 2px solid black;
     height: auto;
-    max-width: 100%;
+    max-width: 90%;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-top: $spacing-unit * 1.5;
+
+    .image-caption {
+        color: lighten($text-color, 10%);
+        margin-top: $spacing-unit * .05;
+    }
 }
 
 /***** HIGHLIGHT *****/

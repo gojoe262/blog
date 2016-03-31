@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.post-title h1 {
+    margin-top: $spacing-unit * 1.25;
+}
+
 .post-image {
     height: auto;
     max-width: 100%;
@@ -30,4 +34,8 @@
 .post-related hr {
     margin-top: $spacing-unit * 2;
     width: 40%;
+}
+
+.post-related-data {
+    color: lighten($text-color, 20%);
 }
