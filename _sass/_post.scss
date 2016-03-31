@@ -12,6 +12,10 @@
     max-width: 100%;
 }
 
+.post-image img {
+    margin: $spacing-unit auto;
+}
+
 .post-data {
     color: lighten($text-color, 20%);
     // margin-top:$spacing-unit * 2;
