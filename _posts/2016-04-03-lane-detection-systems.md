@@ -29,7 +29,7 @@ Other ways of reducing image noise it to apply a blur to the image, usually done
 #### Regions of Interest ####
 To increase efficiency, the image may be cut in size to only a portion of the original image. This portion is called a Region of Interest (ROI). A ROI is focused on the road and cuts out the upper part of the image which usually contains only sky. By cutting down the image size, subsequent steps have less image to process, and therefore cut down on the computational complexity in the future steps. ROIs may be shaped in a trapezoid to fit around the view of the road or multiple ROIs may be shaped around the probable edges and lane markings of a road.
 
-{% include image.html img="blog/img/region-of-interest.png" caption="Binary Image - Black and White. Notice how the lane markings stand out." %}
+{% include image.html img="blog/img/region-of-interest.png" caption="Region of Interest" %}
 
 #### Inverse Perspective Mapping ####
 To simplify other steps, Inverse Perspective Mapping (IPM) can be used. IPM maps pixels from a three dimensional view of the road to a two dimensional top-down view of the road. This top-down view is very useful in creating and fitting road models to incoming images.
