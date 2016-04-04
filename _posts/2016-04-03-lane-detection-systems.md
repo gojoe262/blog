@@ -51,7 +51,7 @@ In feature extraction, important features, such as road areas, road markings, or
 
 
 
-## Fitting ##
+## 3. Fitting ##
 In most research, lane detection systems are described as finding road and lanes without prior information about the road. In fitting, domain knowledge is used to apply constraints and fit predefined models to road. Applying domain knowledge to the lane detection system improves accuracy.
 
 #### Domain Constraints ####
@@ -68,7 +68,7 @@ Models represent the expected road and lanes from an incoming image. Most of the
 
 
 
-## Tracking ##
+## 4. Tracking ##
 
 Lane detection systems can take one frame of video run the analysis on it. However, the use of tracking can reduce the computational cost in the analysis. Tracking uses previous frames and its corresponding data to predict future frames. The position of road features, such as road signs and lane markings, can be estimated by tracking their movement in previous frames. Instead of searching the entire image over and over for each frame, only certain areas of the image have to be searched to re-find these features.
 
