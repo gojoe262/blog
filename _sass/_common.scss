@@ -73,13 +73,15 @@ a {
     color: $brand-color;
 }
 
-a:hover{
-    color: lighten($brand-color, 15%);
+a:visited {
+    color: darken($brand-color, 10%);
 }
 
-a:visited {
-    color: darken($brand-color, 15%);
+a:hover{
+    color: lighten($brand-color, 10%);
 }
+
+
 
 .collapsed {
     display: none;
