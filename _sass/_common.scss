@@ -69,16 +69,16 @@ p {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: $brand-color;
 }
 
 a:visited {
-    color: darken($brand-color, 10%);
+    color: darken($brand-color, 5%);
 }
 
 a:hover{
-    color: lighten($brand-color, 10%);
+    color: lighten($brand-color, 8%);
 }
 
 
