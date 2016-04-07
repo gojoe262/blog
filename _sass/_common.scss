@@ -78,7 +78,8 @@ a:visited {
 }
 
 a:hover{
-    color: lighten($brand-color, 8%);
+    /*color: lighten($brand-color, 8%);*/
+    text-decoration: underline;
 }
 
 
