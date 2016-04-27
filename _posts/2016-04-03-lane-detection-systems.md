@@ -5,6 +5,7 @@ date:   2016-04-03
 tags: tech, car, cars, autonomous, driving, lane detection,
 image: binarization-bw-vs-color.jpg
 author: Joe Schueller
+comments: true
 ---
 *Article based on a paper I wrote. Full paper located [here]({{site.baseurl}}/assets/SchuellerJo_An_Analysis_Of_On_Road_Lane_Detection_Systems.pdf).*
 <br><br>
