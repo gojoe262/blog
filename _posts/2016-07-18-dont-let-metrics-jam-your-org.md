@@ -17,7 +17,7 @@ This seems like a perfect way to up your bread output and keep up with demand. H
 
 You can see that giving workers the wrong incentive can lead to deviations from the core business. In this case, workers were sacrificing quality, a core concept of your company, in an effort to improve their bread-per-hour rate.  
 
-###Danger of Metrics###
+### Danger of Metrics ###
 
 It is important to pick an appropriate metric when selecting a measurement tool for employee feedback and process improvement. If the metric's goal doesn't fall in-line with the business's goal, you are giving your workers the wrong incentive. Your workers will work to improve a metric and not work to support the core of the company.
 
