@@ -1,20 +1,4 @@
 /****INDEX****/
-.index-title h1 {
-    margin-top: $spacing-unit * 1.25;
-}
-
-.index-list {
-    margin: auto;
-}
-
-.index-post-title {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.index-post-data{
-    color: lighten($text-color, 20%);
-    margin-bottom: ($spacing-unit);
-    margin-left: 10%;
-    margin-right: 10%;
+.index-recent-list .index-post-title h4 {
+    margin-top: $spacing-unit;
 }

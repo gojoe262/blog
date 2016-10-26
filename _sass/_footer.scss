@@ -1,6 +1,12 @@
 /**** FOOTER ****/
-.footer {
-    // text-align: center;
-    // padding: $spacing-unit 0;
-    // background-color:blue;
+footer {
+    text-align: center;
+    font-size: $base-font-size * .85;
+    margin-top: $spacing-unit * 5;
+    margin-bottom: $spacing-unit;
+}
+
+footer hr {
+    width: 95%;
+    margin-bottom: $spacing-unit;
 }

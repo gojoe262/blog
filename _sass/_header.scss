@@ -1,9 +1,39 @@
-nav {
+/*** HEADER NAVIGATION ***/
+header nav {
     text-align: left;
-    margin-top: $spacing-unit * 0.25;
-    // padding-top: $spacing-unit * 0.25;
+    padding-bottom: ($spacing-unit * 1.5)
 }
 
-nav h3 {
-    margin-top: 0;
+header > nav > .logo {
+    float: left;
+    margin: 0;
+    padding: ($spacing-unit * .5)
+}
+
+header > nav > .logo > h4 {
+    margin: 0;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+header > nav > ul > li {
+    float: left;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    color: $brand-color;
+    text-align: center;
+    padding: ($spacing-unit * .5) ($spacing-unit * .5);
+    text-decoration: none;
+}
+
+header > nav > ul > li a:hover {
+    text-decoration: underline;
 }

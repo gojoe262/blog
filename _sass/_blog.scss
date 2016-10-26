@@ -1,0 +1,16 @@
+/**** BLOG ****/
+.blog-list {
+    margin: auto;
+}
+
+.blog-post-title {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.blog-post-data{
+    color: lighten($text-color, 20%);
+    margin-bottom: ($spacing-unit);
+    margin-left: 10%;
+    margin-right: 10%;
+}

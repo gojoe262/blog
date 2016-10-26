@@ -17,11 +17,15 @@ $brand-color:      #3ba791;
 $container-width:     750px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+/*** CSS SHARED ***/
 @import "syntax-highlighting";
 @import "reset";
 @import "common";
 @import "header";
 @import "footer";
 @import "post";
+
+/*** CSS PAGE SPECIFIC ***/
 @import "index";
-@import "about"
+@import "about";
+@import "blog";

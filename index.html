@@ -1,13 +1,26 @@
 ---
 layout: default
 ---
-<div class="index-title center">
-    <h1>Index</h1>
+<div class="page-title center">
 </div>
-<div class="index-list">
+
+<div class="center">
+    <h1>About Me</h1>
+</div>
+{% include image.html img="blog/img/profile-pic.png" %}
+<p>
+    I am a software developer, guitar player, singer ....actually singing is still a WIP (work-in-progress).<br>
+    <a href="{{ site.baseurl }}/about.html">More about me &gt</a>
+</p>
+
+<div class="center">
+    <h1>Blog</h1>
+</div>
+
+<div class="index-recent-list">
 {% for post in site.posts %}
     <div class="index-post-title">
-        <h3 class=""><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <h4 class=""><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
     </div>
     <div class="index-post-data">
         <span>{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -15,8 +28,6 @@ layout: default
         <span>{{ post.author }}</span>
         {% endif %}
     </div>
-    <!-- {% if forloop.length > 1 and forloop.last != true  %}
-    <hr width="80%">
-    {% endif %} -->
 {% endfor %}
 </div>
+<h4><a href="{{ site.baseurl }}/blog.html">Full List</a></h4>
