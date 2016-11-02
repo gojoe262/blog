@@ -1,11 +1,5 @@
-<header>
-    <nav>
-        <div class="logo">
-            <h4><a href="{{ site.baseurl }}/index.html">Joe Schueller</a></h4>
-        </div>
-        <ul>
-            <li><a href='{{ site.baseurl }}/about.html'>About</a></li>
-            <li><a href='{{ site.baseurl }}/blog.html'>Blog</a></li>
-        </ul>
-    </nav>
+<header class="page-header">
+     <h1 class="project-name"> <a class="header-link" href="{{ site.baseurl }}/"> {{ site.title }}</a></h1>
+     <!--<h3 style="font-weight: lighter;">a blog for <a class="header-link" href="http://canijustgo.com/" target="_blank">canijustgo.com</a></h3>-->
+     <h3>{% if site.twitter_username %}<a class="header-link" href="http://twitter.com/{{ site.twitter_username }}" target="_blank">follow @{{ site.twitter_username }}</a></h3>{% endif %}
 </header>

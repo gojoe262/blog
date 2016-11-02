@@ -7,9 +7,9 @@
 
 # Site settings
 title: Joe Schueller Blog
-email: gojoe262@hotmail.com
+email: schuellerj@live.com
 description: ""
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+#baseurl: "/blog" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
