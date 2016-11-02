@@ -1,11 +1,10 @@
-
+/***HEADER***/
 .page-header {
-  color: $header-text-color;
-  //text-align: center;
-  background: #56687C;// url($header-image) no-repeat 50%;
-  background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    color: $header-text-color;
+    background: $header-background-color;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 @media screen and (min-width: 64em) {

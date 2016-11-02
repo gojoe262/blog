@@ -1,14 +1,14 @@
 /**** ABOUT ****/
 .about-card {
-    margin-bottom: 40px;//$spacing-unit * 1.5;
+    margin-bottom: 40px;
     margin-left: 25px;
 }
 .about-card h1
 {
     font-size: $font-size * 1.25;
     line-height: $font-size * 1.5;
-    margin-bottom: 10px;//$spacing-unit * .25;
-    margin-top: 20px;//$spacing-unit * .75;
+    margin-bottom: 10px;
+    margin-top: 20px;
     font-style: italic;
 }
 
@@ -18,10 +18,4 @@
     line-height: $font-size * 1.1;
     margin-top: 0;
     margin-bottom: 5px;
-    //color: $font-color;
-}
-
-.about-card p
-{
-    //margin-top:0;
 }

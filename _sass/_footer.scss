@@ -1,32 +1,14 @@
 /*** FOOTER ***/
 footer {
-  background: #56687C;
-  position: relative;
-  z-index: 1;
-  color: $header-text-color;
-  margin-top: 70px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-size: $font-size * 1.15;
-  text-align: center;
-  
-  &:before{
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden; // for Chrome Windows
-  }
-
-  &:before {
-    top: 0;
-    transform: skewY(358deg);
-    transform-origin: 0% 0;
-  }
+    background: $header-background-color;
+    color: $header-text-color;
+    margin-top: 70px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: $font-size * 1.15;
+    text-align: center;
+    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 footer a {
