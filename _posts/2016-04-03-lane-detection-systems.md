@@ -21,9 +21,9 @@ Preprocessing has two main goals: remove visual noise and prepare the image for 
 #### Binarization ####
 One way to reduce noise is to use a binarization function to convert the image to a two-toned image. A binarization function will go through each pixel and determine if it should be redrawn as white or black. For example, a grayscale image will contain pixels ranging in intensity from 0 (black) up to 255 (white). The binarization function would have a threshold, say 100. Any pixel at or below 100 would be redrawn as black. Pixels above 100 would be white. Using this technique, the image would be redrawn in two colors (hence "binary"). Important features of the image, such as bright lane markings on the road, will stand out and be picked up easier in the Feature Detection step and the other following steps.
 
-{% include image.html img="blog/img/binarization-color.jpg" caption="Full color" %}
+{% include image.html img="img/binarization-color.jpg" caption="Full color" %}
 
-{% include image.html img="blog/img/binarization-bw.jpg" caption="Binary Image - Black and White. Notice how the lane markings stand out." %}
+{% include image.html img="img/binarization-bw.jpg" caption="Binary Image - Black and White. Notice how the lane markings stand out." %}
 
 #### Blurring ####
 Other ways of reducing image noise it to apply a blur to the image, usually done with a Gaussian Blur. Commonly used in image processing and graphic design, it is very effective in removing random “salt and pepper noise” from the image.
@@ -31,7 +31,7 @@ Other ways of reducing image noise it to apply a blur to the image, usually done
 #### Regions of Interest ####
 To increase efficiency, the image may be cut in size to only a portion of the original image. This portion is called a Region of Interest (ROI). A ROI is focused on the road and cuts out the upper part of the image which usually contains only sky. By cutting down the image size, subsequent steps have less image to process, and therefore cut down on the computational complexity in the future steps. ROIs may be shaped in a trapezoid to fit around the view of the road or multiple ROIs may be shaped around the probable edges and lane markings of a road.
 
-{% include image.html img="blog/img/region-of-interest.png" caption="Region of Interest" %}
+{% include image.html img="img/region-of-interest.png" caption="Region of Interest" %}
 
 #### Inverse Perspective Mapping ####
 To simplify other steps, Inverse Perspective Mapping (IPM) can be used. IPM maps pixels from a three dimensional view of the road to a two dimensional top-down view of the road. This top-down view is very useful in creating and fitting road models to incoming images.
@@ -75,8 +75,6 @@ Models represent the expected road and lanes from an incoming image. Most of the
 Lane detection systems can take one frame of video run the analysis on it. However, the use of tracking can reduce the computational cost in the analysis. Tracking uses previous frames and its corresponding data to predict future frames. The position of road features, such as road signs and lane markings, can be estimated by tracking their movement in previous frames. Instead of searching the entire image over and over for each frame, only certain areas of the image have to be searched to re-find these features.
 
 Systems have used this idea to rethink the way Regions of Interest (ROI) are created. A new system of Lane Bounded Regions of Interest (LBROI) uses previous frames to create an ROI that surrounds the lane and road boundaries. This limits the search space that is to be used in the next frames of video. Lower computational cost and improved accuracy are the driving forces behind tracking.
-
-
 
 
 

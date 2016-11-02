@@ -1,25 +1,27 @@
 /**** ABOUT ****/
 .about-card {
-    margin-bottom: $spacing-unit * 1.5;
+    margin-bottom: 40px;//$spacing-unit * 1.5;
+    margin-left: 25px;
 }
 .about-card h1
 {
-    font-size: $base-font-size * 1.25;
-    line-height: $base-font-size * 1.5;
-    margin-bottom: $spacing-unit * .25;
-    margin-top: $spacing-unit * .75;
+    font-size: $font-size * 1.25;
+    line-height: $font-size * 1.5;
+    margin-bottom: 10px;//$spacing-unit * .25;
+    margin-top: 20px;//$spacing-unit * .75;
     font-style: italic;
 }
 
 .about-card h2
 {
-    font-size: $base-font-size;
-    line-height: $base-font-size * 2;
+    font-size: $font-size * 1.1;
+    line-height: $font-size * 1.1;
     margin-top: 0;
-    color: $text-color;
+    margin-bottom: 5px;
+    //color: $font-color;
 }
 
 .about-card p
 {
-    margin-top:0;
+    //margin-top:0;
 }

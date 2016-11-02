@@ -1,12 +1,18 @@
-/**** FOOTER ****/
-footer {
-    text-align: center;
-    font-size: $base-font-size * .85;
-    margin-top: $spacing-unit * 5;
-    margin-bottom: $spacing-unit;
+/*** FOOTER ***/
+.site-footer {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: solid 1px #eff0f1;
 }
 
-footer hr {
-    width: 100%;
-    margin-bottom: $spacing-unit;
+footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: solid 1px #000;
+}
+
+footer p {
+    font-size: $font-size * .9;
+    color: lighten($font-color, 20%);
+    text-align: center;
 }

@@ -1,29 +1,15 @@
-/***** POST *****/
-.post-title {
+.post-data {
+    color: lighten($font-color, 20%);
     text-align: center;
-}
-
-.post-title h1 {
-    margin-top: $spacing-unit * 1.25;
+    margin-bottom: $spacing-unit * .5;
 }
 
 .post-image {
     height: auto;
     max-width: 100%;
-}
-
-.post-image img {
-    margin: $spacing-unit auto;
-}
-
-.post-data {
-    color: lighten($text-color, 20%);
-    // margin-top:$spacing-unit * 2;
-    text-align:center;
-}
-
-.post-content {
-    margin-top: $spacing-unit * 1.5;
+    margin: auto;
+    margin-top: $spacing-unit * 1;
+    margin-bottom: $spacing-unit * 1;
 }
 
 .post-related {
@@ -35,17 +21,18 @@
     margin-top: 0;
 }
 
-.post-related hr {
+.post-related hr, .post-comments hr {
     margin-top: $spacing-unit * 2;
     width: 40%;
-}
-
-.post-related-data {
-    color: lighten($text-color, 20%);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lighten($font-color, 40%);
 }
 
 .post-comments hr {
     margin-bottom: $spacing-unit * 2;
-    margin-top: $spacing-unit * 2;
-    width: 40%;
+}
+
+.post-related-data {
+    color: lighten($font-color, 20%);
 }

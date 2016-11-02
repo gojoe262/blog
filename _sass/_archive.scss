@@ -1,0 +1,25 @@
+/**** ARCHIVE ****/
+.archive-list {
+    margin: auto;
+}
+
+.archive-list h3 {
+    margin-top: $spacing-unit;
+}
+
+.archive-post-title {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.archive-post-title h3 {
+    margin-bottom:0;
+}
+
+.archive-post-data{
+    color: lighten($font-color, 20%);
+    //  margin-bottom: ($spacing-unit);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}

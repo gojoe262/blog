@@ -1,71 +1,89 @@
-/*** HEADER ***/
-header {
-    background-image: url("../img/grey-poly-background.png");
-    background-color: lightgrey;
-    background-size: cover;
-    padding: $spacing-unit * 2.5;
+
+.page-header {
+  color: $header-text-color;
+  text-align: center;
+  background: #56687C url($header-image) no-repeat 50%;
+  background-size: cover;
 }
 
-@media (max-width: $container-width) {
-    header { padding: $spacing-unit * 1.5;  }
+@media screen and (min-width: 64em) {
+    .page-header {
+        padding: 4rem 5rem;
+    }
 }
 
-header > .logo {
-  margin: 0;
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .page-header {
+        padding: 2rem 3rem;
+    }
 }
 
-header > .logo > h1 {
-    margin: 0;
+@media screen and (max-width: 42em) {
+    .page-header {
+        padding: 1rem 1rem;
+    }
 }
 
-header > .nav {
-    float:right;
+.project-name {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
 }
 
-header > .nav > ul {
-    list-style-type: none;
+.header-link  {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-header > .nav > ul > li {
-    float: right;
-}
-
-header > .nav > ul > li > a {
-    padding: $spacing-unit * .5;
-    //color:white;
-    font-size: $base-font-size * 2;
-
-}
-/*
-header .nav {
-    text-align: left;
-}
-
-header > .nav > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right;
-    background-color: blue;
-}
-
-header > .nav > ul > li {
-    float: left;
-}
-
-header > .nav > ul > li > a {
-    display: block;
-    color: $brand-color;
-    text-align: center;
-    padding: ($spacing-unit * .5) ($spacing-unit * .5);
+.header-link:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
     text-decoration: none;
 }
 
-header > .nav > ul > li a:hover {
-    text-decoration: underline;
+@media screen and (min-width: 64em) {
+    .project-name {
+        font-size: 3.25rem;
+    }
 }
 
-header > hr {
-    width: 100%;
-}*/
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-name {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-name {
+        font-size: 1.75rem;
+    }
+}
+
+.project-tagline {
+    margin-bottom: 2rem;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 64em) {
+    .project-tagline {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-tagline {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project-tagline {
+        font-size: 1rem;
+    }
+}
+
+.page-header .nav {
+	font-size: $font-size * 1.25;
+    margin-top: $spacing-unit * .5;
+}

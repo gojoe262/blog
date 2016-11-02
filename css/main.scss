@@ -1,31 +1,41 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-// Our variables
-$base-font-family: Arial, open-sans, sans-serif;
-$base-font-size:   16px;
-$base-line-height: 28px;
+// // Our variables
+$header-image: "../img/grey-poly-background.png";
+$header-text-color: white;
 
+$font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size:   14px;
+$line-height: 1.6;
+
+$link-color: #62a2c9;
+$font-color: #32383B;
+$heading-color: #181f25;
+//
 $spacing-unit:     28px;
+//
+// $text-color:       #616161;
+// $background-color: #ffffff;
+// $item-color:       #ffffff;
+// $brand-color:      #3ba791;
+//
+// // Width of the content area
+// $container-width:     750px;
 
-$text-color:       #616161;
-$background-color: #ffffff;
-$item-color:       #ffffff;
-$brand-color:      #3ba791;
 
-// Width of the content area
-$container-width:     750px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 /*** CSS SHARED ***/
-@import "syntax-highlighting";
+// @import "syntax-highlighting";
 @import "reset";
 @import "common";
 @import "header";
 @import "footer";
 @import "post";
+@import "image";
 
 /*** CSS PAGE SPECIFIC ***/
-@import "index";
+// @import "index";
 @import "about";
-@import "blog";
+@import "archive";
