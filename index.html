@@ -12,12 +12,12 @@ layout: default
 </p>
 
 <h1>Recent posts</h1>
-<div class="archive-list">
+<div class="posts-list">
 {% for post in site.posts %}
-    <div class="archive-post-title">
+    <div class="posts-post-title">
         <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
     </div>
-    <div class="archive-post-data">
+    <div class="posts-post-data">
         <span>{{ post.date | date: "%b %-d, %Y" }}</span>
         {% if post.author %} •
         <span>{{ post.author }}</span>

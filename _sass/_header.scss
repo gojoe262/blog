@@ -7,29 +7,6 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
-@media screen and (min-width: 64em) {
-    .page-header {
-        padding: 3rem 5rem 4rem 14rem;
-    }
-}
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .page-header {
-        padding: 1rem 3rem 2rem 5rem;
-    }
-}
-
-@media screen and (max-width: 42em) {
-    .page-header {
-        padding: 1rem 1rem 1rem 2rem;
-    }
-}
-
-.project-name {
-    margin-top: 0;
-    margin-bottom: 0.1rem;
-}
-
 .header-link  {
     color: $header-text-color;
     text-decoration: none;
@@ -42,49 +19,59 @@
     text-decoration: none;
 }
 
+.project-name {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+/***HEADER LARGE***/
 @media screen and (min-width: 64em) {
+    .page-header {
+        padding: 3rem 5rem 4rem 14rem;
+    }
+
     .project-name {
         font-size: 3.25rem;
     }
+
+    .page-header .nav {
+	    font-size: $font-size * 1.5;
+        margin-top: $spacing-unit * .5;
+    }
 }
 
+/***HEADER MEDIUM***/
 @media screen and (min-width: 42em) and (max-width: 64em) {
+    .page-header {
+        padding: 1.5rem 3.5rem 2.5rem 5.5rem;
+    }
+
     .project-name {
         font-size: 2.25rem;
     }
+
+    .page-header .nav {
+	    font-size: $font-size * 1.5;
+        margin-top: $spacing-unit * .3;
+    }
 }
 
+/***HEADER SMALL***/
 @media screen and (max-width: 42em) {
+    .page-header {
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
+    }
+
     .project-name {
         font-size: 1.75rem;
     }
-}
 
-.project-tagline {
-    margin-bottom: 2rem;
-    font-weight: normal;
-    opacity: 0.7;
-}
-
-@media screen and (min-width: 64em) {
-    .project-tagline {
-        font-size: 1.25rem;
+    .page-header .nav {
+	    font-size: $font-size * 1.5;
+        margin-top: $spacing-unit * .2;
     }
 }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .project-tagline {
-        font-size: 1.15rem;
-    }
-}
 
-@media screen and (max-width: 42em) {
-    .project-tagline {
-        font-size: 1rem;
-    }
-}
 
-.page-header .nav {
-	font-size: $font-size * 1.25;
-    margin-top: $spacing-unit * .5;
-}
+
