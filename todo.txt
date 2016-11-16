@@ -1,12 +1,10 @@
 TODO
 -------------------------------------
 - Create a simple logo or profile pic
+- Add profile pic to about page
 - Create a "most popular" section for blog posts on the home page
-- Fix page title (the title that shows up on the tab in the browser)
 - Make lightbox or direct link when clicking images
-- Move to monospaced font? (or a better reading font, not this sans-serif sh*t)
 - Redo header nav
-	- Larger links, bold
 	- Underline active page
 - Move location from joe-schueller.github.io/blog/ to joe-schueller.github.io/
     - Done on local repository
@@ -15,7 +13,7 @@ TODO
 
 DOING
 -------------------------------------
-
+- Fix page title (the title that shows up on the tab in the browser)
 
 
 DONE
