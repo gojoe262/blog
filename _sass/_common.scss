@@ -63,6 +63,7 @@ h4 {
 
 .main-content p {
   margin-bottom: 1.3em;
+  font-family: $font-family-p;
 }
 
 .main-content code {
@@ -190,26 +191,21 @@ h4 {
   border: 0;
 }
 
-
-@media screen and (min-width: $responsive-breakpoint-large) {
+/***MAIN CONTENT LARGE***/
+@media screen and (min-width: $content-width) {
     .main-content {
-        max-width: $responsive-breakpoint-large;
-        padding: 1.25rem 6rem 0.5rem;
+        max-width: $content-width;
+        padding: 0 $spacing-unit;
         margin: 0 auto;
         font-size: $font-size * 1.3;
     }
 }
 
-@media screen and (min-width: $responsive-breakpoint-small) and (max-width: $responsive-breakpoint-large) {
+/***MAIN CONTENT SMALL***/
+@media screen and (max-width: $content-width) {
     .main-content {
-        padding: 1.15rem 4rem 0.5rem;
+        width: 100%;
+        padding: 0 5%;
         font-size: $font-size * 1.3;
-    }
-}
-
-@media screen and (max-width: $responsive-breakpoint-small) {
-    .main-content {
-        padding: 1rem 0.5rem 0.5rem;
-        font-size: $font-size * 1.2;
     }
 }

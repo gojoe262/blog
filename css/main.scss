@@ -5,8 +5,8 @@
 $header-text-color: white;
 $header-background-color: #56687C;
 
-//$font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family: "Courier", "Courier New", monospace;
+$font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-p: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 $font-size:   14px;
 $line-height: 1.6;
 
@@ -15,9 +15,7 @@ $font-color: #101010;
 
 $spacing-unit:     28px;
 
-$responsive-breakpoint-large: 1000px;
-$responsive-breakpoint-small: 500px;
-//$responsive-breakpoint-extra-small
+$content-width: 750px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

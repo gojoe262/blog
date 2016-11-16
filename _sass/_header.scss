@@ -25,25 +25,27 @@
 }
 
 /***HEADER LARGE***/
-@media screen and (min-width: $responsive-breakpoint-large) {
-    .page-header {
-        padding: 3rem 5rem 4rem 10rem;
+@media screen and (min-width: $content-width) {
+    .page-header-content {
+        max-width: $content-width;
+        padding: ($spacing-unit) ($spacing-unit) ($spacing-unit * 2) ($spacing-unit);
+        margin: 0 auto;
     }
 
     .project-name {
-        font-size: 3.25rem;
+        font-size: $font-size * 3.5;
     }
 
-    .page-header .nav {
+    .page-header-content .nav {
 	    font-size: $font-size * 1.5;
-        margin-top: $spacing-unit * .5;
+        margin-top: $spacing-unit * .4;
     }
 }
 
-/***HEADER MEDIUM***/
-@media screen and (min-width: $responsive-breakpoint-small) and (max-width: $responsive-breakpoint-large) {
-    .page-header {
-        padding: 1.5rem 3.5rem 2.5rem 5.5rem;
+@media screen and (max-width: $content-width) {
+    .page-header-content {
+        width: 100%;
+        padding: ($spacing-unit) ($spacing-unit) ($spacing-unit * 2) ($spacing-unit);
     }
 
     .project-name {
@@ -53,21 +55,5 @@
     .page-header .nav {
 	    font-size: $font-size * 1.5;
         margin-top: $spacing-unit * .3;
-    }
-}
-
-/***HEADER SMALL***/
-@media screen and (max-width: $responsive-breakpoint-small) {
-    .page-header {
-        padding: 1.5rem 1.5rem 1.5rem 2rem;
-    }
-
-    .project-name {
-        font-size: 1.75rem;
-    }
-
-    .page-header .nav {
-	    font-size: $font-size * 1.5;
-        margin-top: $spacing-unit * .2;
     }
 }
